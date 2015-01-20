@@ -1,7 +1,6 @@
 require_relative 'pieces'
 require_relative 'board'
 require_relative 'errors'
-require 'debugger'
 require 'colorize'
 
 class Game
@@ -20,7 +19,7 @@ class Game
 
     until game_over?
       @board.display(cur_player.color)
-      puts "Oh shit, you're in check!" if @board.in_check?(cur_player.color)
+      puts "Oh no, you're in check!" if @board.in_check?(cur_player.color)
       show_stats
       take_turn(cur_player)
       cur_player = (cur_player == @player1 ? @player2 : @player1)
