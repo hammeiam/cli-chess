@@ -1,7 +1,7 @@
-== CLI-Chess
-A pure Ruby implementation of human v human chess in the command line
+# CLI-Chess
+## A pure Ruby implementation of human v human chess in the command line
 
-Instructions: 
+## Instructions: 
 * Download this folder and cd into it
 * gem install colorize
 * In your terminal, run 'ruby game.rb'
